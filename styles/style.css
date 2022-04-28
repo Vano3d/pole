@@ -1,7 +1,7 @@
 .main {
     color: #2E2032;
     background-color: #fff;
- 
+    padding: 20px;
 }
 
 .header {
@@ -13,7 +13,7 @@
 .form, .window {
     max-width: 640px;
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 
@@ -42,9 +42,9 @@
 } */
 
 .form__vehicle {
-    list-style: none;
+    /* list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     margin: 0;
     padding: 0;
 }
@@ -60,6 +60,8 @@
 .form-control {
     padding: 10px 10px;
 }
+
+
 
 .window__header {
     margin-bottom: 20px;
