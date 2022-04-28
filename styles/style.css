@@ -9,7 +9,7 @@
     
 }
 
-.form, .window {
+.form, .window, .letter {
     max-width: 640px;
     margin: 0 auto;
     /* padding: 20px; */
@@ -89,4 +89,63 @@
 .custom-checkbox {
     transform: scale(1.3);
     -webkit-transform: scale(1.3);
+}
+
+.letter__header {
+    font-size: 24px;
+}
+
+.letter__title {
+    font-style: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.letter__section_title {
+    font-style: 20px;
+    margin-top: 40px;
+}
+
+.letter__details {
+    border-bottom: 1px solid rgb(202, 202, 202);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    min-height: 35px;
+}
+
+.letter__text {
+    display: block;
+}
+
+.letter__wrapper {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.custom_button {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.letter__subtitle {
+    margin-top: 20px;
+}
+
+.btn.btn-primary {
+ 
+    padding: 16px 28px;
+}
+
+
+.custom_btn {
+    padding: 16px 26px;
+}
+
+.letter__org {
+    margin-top: 48px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
