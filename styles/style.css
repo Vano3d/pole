@@ -86,3 +86,8 @@
 .form-check {
     margin-top: 13px;   
 }
+
+.custom-checkbox {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
