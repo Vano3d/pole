@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчёт стоимости доставки</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="page">
+
+        <div class="main">
+            <header class="header">
+               
+            </header>
+            
+             <section class="form">
+                <h4 class="form__header">Расчёт стоимости доставки</h4>
+                <p class="form__subtitle">Заполните поля, чтобы мы рассчитали точную стоимость доставки</p>
+                <h6 class="form__fieldtitle">Элеватор</h6>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Регион</option>
+                    <option value="1">Краснодарский край</option>
+                    <option value="2">Ростовская область</option>
+                    <option value="3">Воронежская область</option>
+                    <option value="4">Волгоградская область</option>
+                  </select>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Название</option>
+                    <option value="1">Абрамовский элеватор</option>
+                    <option value="2">АО "КХП" "Тихорецкий"</option>
+                    <option value="3">ЗАО "Комбикормовый завод "Ленинградский"</option>
+                    <option value="4">ОАО "Кореновский элеватор"</option>
+                  </select>
+                  <h6 class="form__fieldtitle">Транспортное средство</h6>
+                  <p class="form__subtitle">Укажите тип транспорта, который подойдёт для приёма зерна на ваш склад</p>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Камаз-сельхозник
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Бортовой-сцепка
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Бортовой-трал
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckChecked"  >
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Тонар
+                    </label>
+                  </div>
+
+                  <h6 class="form__fieldtitle">Норма ввоза в сутки</h6>
+                  <p class="form__subtitle">Максимальное количество зерна, которое вы можете принять на склад</p>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="машин/сут">
+                    <label for="floatingInput">тонн/сутки</label>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3" onclick="window.location.href = 'sent.html';">Отправить запрос</button>
+                  </div>
+                 
+
+             </section>       
+           
+        </div>
+    </div>
+</body>
+</html>

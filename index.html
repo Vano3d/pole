@@ -1,93 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Расчёт стоимости доставки</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Поле.рф: Новая заявка №581 от 15.03.2022</title>
+	<link rel="stylesheet" href="./styles/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> </head>
+
 <body>
-    <div class="page">
+	<div class="page">
+		<div class="main">
+			<header class="header"> </header>
+			<section class="letter">
+				<p class="letter__header">Поле.рф: Новая заявка №581 от 15.03.2022 от АО “ПРОСТОРЫ”</p>
+				<h3 class="letter__title">Здравствуйте, Сергей!</h3>
+				<p class="letter__subtitle">Вам поступила заявка №581 от 15.03.2022г.</p>
+				
+        <ul class="letter__org">
+          <li><strong>Организация:</strong> АО “ПРОСТОРЫ”</li>
+          <li><strong>Контактное лицо:</strong> Тяпкин Афанасий Вакасович</li>
+          <li><strong>ИНН:</strong> 7706621456</li>
 
-        <div class="main">
-            <header class="header">
-               
-            </header>
-            
-             <section class="form">
-                <h4 class="form__header">Расчёт стоимости доставки</h4>
-                <p class="form__subtitle">Заполните поля, чтобы мы рассчитали точную стоимость доставки</p>
-                <h6 class="form__fieldtitle">Элеватор</h6>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Регион</option>
-                    <option value="1">Краснодарский край</option>
-                    <option value="2">Ростовская область</option>
-                    <option value="3">Воронежская область</option>
-                    <option value="4">Волгоградская область</option>
-                  </select>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Название</option>
-                    <option value="1">Абрамовский элеватор</option>
-                    <option value="2">АО "КХП" "Тихорецкий"</option>
-                    <option value="3">ЗАО "Комбикормовый завод "Ленинградский"</option>
-                    <option value="4">ОАО "Кореновский элеватор"</option>
-                  </select>
-                  <h6 class="form__fieldtitle">Транспортное средство</h6>
-                  <p class="form__subtitle">Укажите тип транспорта, который подойдёт для приёма зерна на ваш склад</p>
-                  <!-- <ul class="form__vehicle">
-                    <li class="form__vehicle_item"><input type="checkbox" class="btn-check" id="btn-check-2-outlined" autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Камаз-мельхозник</label>
-                    </li>
-                     <li class="form__vehicle_item"><input type="checkbox" class="btn-check" id="btn-check-3-outlined" autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btn-check-3-outlined">Бортовой-сцепка</label>
-                    </li>
-                     <li class="form__vehicle_item"><input type="checkbox" class="btn-check" id="btn-check-4-outlined" autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btn-check-4-outlined">Бортовой-трал</label>
-                    </li>
-                   <li class="form__vehicle_item"><input type="checkbox" class="btn-check" id="btn-check-5-outlined" autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btn-check-5-outlined">Тонар</label>
-                     </li> 
-                  </ul> -->
-                  <div class="form-check">
-                    <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Камаз-сельхозник
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Бортовой-сцепка
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Бортовой-трал
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckChecked"  >
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Тонар
-                    </label>
-                  </div>
-
-                  <h6 class="form__fieldtitle">Норма ввоза в сутки</h6>
-                  <p class="form__subtitle">Максимальное количество зерна, которое вы можете принять на склад</p>
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="машин/сут">
-                    <label for="floatingInput">тонн/сутки</label>
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3" onclick="window.location.href = 'sent.html';">Отправить запрос</button>
-                  </div>
-                 
-
-             </section>       
-           
-        </div>
-    </div>
+        </ul>
+        
+				<h4 class="letter__section_title" >Детали заявки</h4>
+				<div class="letter__wrapper">
+					<div class="letter__details">
+						<div class="letter__text"> Покупатель </div>
+						<div class="letter__text"> ООО "Деметра трейдинг" </div>
+					</div>
+					<div class="letter__details">
+						<div class="letter__text"> Культура </div>
+						<div class="letter__text"> Пшеница </div>
+					</div>
+					<div class="letter__details">
+						<div class="letter__text"> Объём </div>
+						<div class="letter__text"> 500 т </div>
+					</div>
+					<div class="letter__details">
+						<div class="letter__text"> Цена за тонну (без НДС) </div>
+						<div class="letter__text"> 15 500 р. </div>
+					</div>
+					<div class="letter__details">
+						<div class="letter__text"> Общая (без НДС) </div>
+						<div class="letter__text"> 7 750 000 р. </div>
+					</div>
+				</div>
+				<p>Базис поставки:</p>
+				<p>Со склада хозяйства (FCA)
+					<br> Россия, Краснодарский край, Тимашевский район, Новоленинское сельское поселение </p>
+				<p>Для расчёта стоимости доставки до вашего элеватора перейдите к заявке в личном кабинете через кнопку внизу письма</p>
+				
+        <h4 class="letter__section_title">Показатели качества</h4>
+				<div class="letter__wrapper">
+					<div class="letter__details">
+						<div class="letter__text"> ИДК </div>
+						<div class="letter__text"> 2 </div>
+					</div>
+					<div class="letter__details">
+						<div class="letter__text"> Клейковина, % </div>
+						<div class="letter__text"> 34 </div>
+					</div>
+					<div class="letter__details">
+						<div class="letter__text"> Натура, г/л </div>
+						<div class="letter__text"> 12 </div>
+					</div>
+					<div class="letter__details">
+						<div class="letter__text"> Фузариоз, % </div>
+						<div class="letter__text"> 2 </div>
+					</div>
+					<div class="letter__details">
+						<div class="letter__text"> Влажность, % </div>
+						<div class="letter__text"> 12 </div>
+					</div>
+				</div>
+				<div class="col-auto custom_button">
+					<button type="submit" class="btn btn-primary mb-3 custom_btn" onclick="window.location.href = 'order.html';">Перейти в личный кабинет</button>
+				</div>
+			</section>
+		</div>
+	</div>
 </body>
+
 </html>

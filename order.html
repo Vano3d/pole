@@ -10,53 +10,127 @@
 
 <body>
 	<div class="page">
-		
-	<section class="header">
-	<img class="img_head" src="./images/header_left.png" alt="">
-	<img class="img_head" src="./images/header_right.png" alt="">
-	
-	</section>
-		
-	<section class="number">
-		<img class="img_number" src="./images/number.png" alt="">
-		<img class="img_status" src="./images/status.png" alt="">
-	</section>
-	
-	<section class="banner">
-		<div class="banner__head">
-			<img class="banner__icon" src="./images/icon.png" alt="">
-			<p class="banner__text">Для продолжения работы подтвердите параметры предварительного предложения</p>
-		</div>
-		
-		<div class="banner__buttons">
-			<button type="button" class="btn btn-light rounded-pill">Подтвердить</button>
-			<button type="button" class="btn btn-light rounded-pill invert">Редактировать</button>
-			<button type="button" class="btn btn-light rounded-pill invert">Отменить заявку</button>
-		</div>
-		
-	</section>
-	<ul class="menu">
-		<li class="menu__item">Детали заявки</li>
-		<li class="menu__item">Чат с клиентом</li>
-		<li class="menu__item">Документы</li>
-		<li class="menu__item">История</li>
-	</ul>
+		<section class="header"> <img class="img_head" src="./images/header_left.png" alt=""> <img class="img_head" src="./images/header_right.png" alt=""> </section>
+		<section class="number"> <img class="img_number" src="./images/number.png" alt=""> <img class="img_status" src="./images/status.png" alt=""> </section>
+		<section class="banner">
+			<div class="banner__head"> <img class="banner__icon" src="./images/icon.png" alt="">
+				<p class="banner__text">Для продолжения работы подтвердите параметры предварительного предложения</p>
+			</div>
+			<div class="banner__buttons">
+				<button type="button" class="btn btn-light rounded-pill">Подтвердить</button>
+				<button type="button" class="btn btn-light rounded-pill invert">Редактировать</button>
+				<button type="button" class="btn btn-light rounded-pill invert">Отменить заявку</button>
+			</div>
+		</section>
+		<ul class="menu">
+			<li class="menu__item">Детали заявки</li>
+			<li class="menu__item">Чат с клиентом</li>
+			<li class="menu__item">Документы</li>
+			<li class="menu__item">История</li>
+		</ul>
+		<ul class="culture">
+			<li><img class="culture__img" src="./images/koloski.png" alt=""></li>
+			<li class="culture__text">
+				<p class="culture_bold">Пшеница</p>
+				<p><span class="culture__ligh_color">Класс:</span> 4</p>
+				<p><span class="culture__ligh_color">Протеин, не менее:</span> 12.5</p>
+				<p><span class="culture__ligh_color">Базис доставки:</span> FCA (со склада хозяйства)</p>
+				<p class="culture_bold">7 750 000 р.</p>
+				<p class="culture__ligh_color preprice">*Предварительная цена без НДС</p>
 
-	<ul class="culture">
-		<li><img class="culture__img" src="./images/koloski.png" alt=""></li>
-		<li class="culture__text">
-			<p class="culture_head">Пшеница</p>
-			<p>Класс: 4</p>
-			<p>Протеин, не менее: 12.5</p>
-			<p>Базис доставки: FCA (со склада хозяйства)</p>
+				<ul class="culture__params">
+					<li class="culture__ligh_color">Объём (т)</li>
+					<li class="culture__dots"></li>
+					<li class="culture__item">25 т</li>
+				</ul>
+				<ul class="culture__params">
+					<li class="culture__ligh_color">Цена:</li>
+					<li class="culture__dots"></li>
+					<li class="culture__item">16400 ₽/т</li>
+				</ul>
+				<ul class="culture__params">
+					<li class="culture__ligh_color">Сумма</li>
+					<li class="culture__dots"></li>
+					<li class="culture__item">7 750 000 ₽</li>
+				</ul>
+				
+					
+				</ul>
+
+			</li>
+		</ul>
+		<section class="delivery">
+			<button type="button" class="btn btn-light rounded-pill invert delivery" onclick="window.location.href = 'params.html';">Рассчитать стоимость доставки</button>
+
+		</section>
+		
+		<div class="params">
+			<p class="culture_bold">Показатели качества</p>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">ИДК</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text"> </li>
+			</ul>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Клейковина, %</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">12</li>
+			</ul>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Натура, г/л</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">2</li>
+			</ul>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Фузариоз, %</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">1</li>
+			</ul>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Влажность, %</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">12</li>
+			</ul>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Протеин, не менее</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">12</li>
+			</ul>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Класс</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">4</li>
+			</ul>
+		</div>
+		<div class="params">
+			<p class="culture_bold">Доставка и оплата</p>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Процент предоплаты</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">100</li>
+			</ul>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Базис доставки</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">FCA (со склада хозяйства)</li>
+			</ul>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Адрес хозяйства</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">Воронежская обл., г. Нововоронеж, с. Ивановка</li>
+			</ul>
+			<ul class="culture__params">
+				<li class="culture__ligh_color">Интервал поставки</li>
+				<li class="culture__dots"></li>
+				<li class="culture__text">28.04.2022 - 29.04.2022</li>
+			</ul>
 			
-		
-		</li>
-
-	</ul>
-		
-		
+		</div>
 	</div>
+	<section class="edit">
+		<button type="button" class="btn btn-light rounded-pill invert">Редактировать</button>
+
+	</section>
 </body>
 
 </html>

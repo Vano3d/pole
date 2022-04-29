@@ -186,6 +186,16 @@
     text-align: center;   
 }
 
+/* Стили order.html */
+
+.page {
+    
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -205,12 +215,12 @@
 }
 
 .img_number {
-    height: 100px;
+    height: 90px;
 }
 
 .img_status {
     width: 170px;
-    /* height: 40px; */
+
     
    
 }
@@ -260,8 +270,11 @@
 
 .menu {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
     margin: 0;
     padding: 0 10px;
     margin-top: 25px;
@@ -269,7 +282,7 @@
 
 }
 .menu__item {
-    font-size: 14px;
+    font-size: 13px;
     padding-bottom: 10px;
     font-weight: 600;
 }
@@ -281,7 +294,7 @@
 .culture {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     margin-top: 25px;
@@ -289,8 +302,84 @@
 
 .culture__img {
     width: 60px;
+    padding-right: 10px;
 }
 
-.page {
-    padding-bottom: 40px;
+.culture__text {
+    font-size: 13px;
+}
+
+.culture__ligh_color {
+    color: rgb(106, 106, 106);
+    font-size: 13px;
+}
+
+.culture_bold {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.preprice {
+    margin-top: -15px;
+}
+
+.culture__params {
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height:2em;
+}
+.culture__dots {
+    /* border-bottom: 1px dashed rgb(184, 184, 184); */
+    min-width: 1.7rem;
+    /* max-width: 500px; */
+
+    background-image: linear-gradient(90deg,#d6d6d6 50%,hsla(0,0%,84%,0) 0);
+    background-position: 50%;
+    background-repeat: repeat-x;
+    background-size: 5px 1px;
+    display: block;
+    flex-grow: 1;
+    height: 6px;
+    margin: 0 6px;
+    overflow: hidden;
+    transform: translateY(16px);
+    white-space: nowrap;
+    
+}
+
+.params {
+    margin-top: 50px;
+}
+
+.edit {
+    height: 120px;
+    background-color: #a2a2a2;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn.btn-light.invert.delivery {
+    text-align: center;
+    width: 280px;
+    background-color: rgb(86, 86, 86);
+}
+
+.delivery {
+    
+    margin-top: 20px;   
+    display: flex;
+   justify-content: center;
+    align-items: center;
 }
