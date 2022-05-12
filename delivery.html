@@ -20,25 +20,26 @@
 				<h6 class="form__fieldtitle smaller">Способ погрузки</h6>
 				<select class="form-select" aria-label="Default select example">
 					<option selected>Выберите</option>
-					<option value="1">Элеватор</option>
-					<option value="2">С поля</option>
-					<option value="3">Маниту</option>
-					<option value="4">Кун</option>
-					<option value="4">Зарномёт</option>
-					<option value="4">Амкодор</option>
-					<option value="4">Вертикальный способ</option>
+					<option value="1">Телескопический погрузчик (типа Маниту)</option>
+					<option value="2">Фронтальный погрузчик (типа Кун)</option>
+					<option value="3">Зерномёт</option>
+					<option value="4">ЗАВ (зерноочистительный комплекс)</option>
+					<option value="5">Элеватор</option>
+					<option value="6">С поля (из-под комбайна)</option>
+	
 				</select>
 				<h6 class="form__fieldtitle smaller">Ограничение по высоте, м</h6>
+        <p class="form__subtitle">Минимальная высота на любом из участков хозяйства</p>
 				<div class="number">
 					<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
-					<input type="number" min="1" value="3" step="0.1" readonly>
+					<input type="number" min="2" max="6" value="3" step="0.1" readonly>
 					<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
 				</div>
 				<h6 class="form__fieldtitle smaller">Весы</h6>
 				<p class="form__subtitle lenght">Длина, м</p>
 				<div class="number">
 					<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
-					<input type="number" min="1" value="6" step="1">
+					<input type="number" min="4" max="25" value="6" step="1">
 					<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
 				</div>
 				<div class="form-check">
