@@ -30,6 +30,20 @@
     margin-top: 10px;
 }
 
+.form-range {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.form-label {
+    margin-top: 10px;
+}
+
+.height {
+    max-width: 250px;
+    margin-top: 20px;
+}
+
 
 .form-floating {
     width: 150px;
